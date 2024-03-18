@@ -16,7 +16,7 @@ export class CodepipelineStack extends cdk.Stack {
         // Other sources are available.
         input: CodePipelineSource.gitHub('athakur7/aws-cdk-poc', 'main'),
         commands: [
-          'cd codepipeline',
+          // 'cd codepipeline',
           'npm ci',
           'npm run build',
           'npx cdk synth',
