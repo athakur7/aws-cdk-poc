@@ -35,6 +35,5 @@ export class WebServerStack extends cdk.Stack {
     // userData
     const userData = readFileSync('./lib/userdata.sh','utf8');
      demoEC2.addUserData( userData);
- 
 }
 }
