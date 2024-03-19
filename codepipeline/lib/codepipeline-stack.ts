@@ -19,7 +19,7 @@ export class CodepipelineStack extends cdk.Stack {
         }),
         
         commands: [
-          'cd codepipeline',
+          // 'cd codepipeline',
           'npm ci',
           'npm run build',
           'npx cdk synth',
