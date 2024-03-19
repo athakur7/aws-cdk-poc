@@ -14,7 +14,10 @@ export class CodepipelineStack extends cdk.Stack {
       synth: new ShellStep('Synth', {
         // Use a connection created using the AWS console to authenticate to GitHub
         // Other sources are available.
-        input: CodePipelineSource.gitHub('athakur7/aws-cdk-poc', 'main'),
+        input: CodePipelineSource.connection('athakur7/aws-cdk-poc', 'main',{
+        connectionArn: 'arn:aws:codestar-connections:us-east-2:509935023135:connection/84e6ff6e-73b5-4958-8c80-46263ec0f981',
+        }),
+        
         commands: [
           'cd codepipeline',
           'npm ci',
