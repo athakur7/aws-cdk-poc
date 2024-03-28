@@ -1,2 +1,2 @@
 
-![Image Alt Text](./assests/serverless.png)
+![Image Alt Text](./assets/serverless.png)
